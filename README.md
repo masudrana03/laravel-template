@@ -17,9 +17,14 @@
 ## One Click Setup Command :
 
 
-
+#### Without open vs code
 ```bash
-git clone git@github.com:masudrana03/laravel-template.git
+curl -sL https://raw.githubusercontent.com/masudrana03/laravel-template/refs/heads/adminlte-4/project_setup.sh | bash
+```
+
+#### With open vs code
+```bash
+curl -sL https://raw.githubusercontent.com/masudrana03/laravel-template/refs/heads/adminlte-4/project_setup.sh | bash && cd laravel-template && code .
 ```
 
 ## Single Command :
