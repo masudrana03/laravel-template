@@ -23,9 +23,21 @@
                             </a> </li>
                     </ul>
                 </li>
-                <li class="nav-item"> <a href="./generate/theme.html" class="nav-link"> <i class="nav-icon bi bi-palette"></i>
+
+                <li class="nav-item">
+                     <a href="{{ route('users.index') }}" class="nav-link {{ request()->routeIs('users.*') ? 'active' : '' }}">
+                        <i class="nav-icon bi bi-people"></i>
+                        <p>Users</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                     <a href="./generate/theme.html" class="nav-link"> <i class="nav-icon bi bi-palette"></i>
                         <p>Theme Generate</p>
-                    </a> </li>
+                    </a>
+                </li>
+
+
                 <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
                         <p>
                             Widgets

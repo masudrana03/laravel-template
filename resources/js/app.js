@@ -1,9 +1,15 @@
-import 'bootstrap'; // Bootstrap import
-import 'admin-lte'; // AdminLTE import
+import jQuery from 'jquery';  // Import jQuery at the beginning
+
+// Make jQuery available globally
+window.$ = jQuery;
+
+import 'bootstrap';  // Bootstrap depends on jQuery
+import 'admin-lte';  // AdminLTE depends on Bootstrap
 
 // Import OverlayScrollbars and its CSS
 import { OverlayScrollbars } from 'overlayscrollbars';
 import 'overlayscrollbars/styles/overlayscrollbars.css';
+
 
 // Custom scrollbar settings for the sidebar
 const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
@@ -25,3 +31,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
