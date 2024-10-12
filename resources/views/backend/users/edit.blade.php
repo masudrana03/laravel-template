@@ -42,9 +42,7 @@
                         </div>
                         <form method="POST" action="{{ route('users.update', $user->id) }}" enctype="multipart/form-data" class="needs-validation" novalidate>
                             @csrf
-
                             @method('patch')
-
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-4">
@@ -142,14 +140,8 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
 @endsection
+
 @push('styles')
     <style>
 
@@ -157,16 +149,10 @@
 @endpush
 
 @push('scripts')
-    <script type="module">
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    <script>
         (() => {
             "use strict";
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms =
-                document.querySelectorAll(".needs-validation");
-
-            // Loop over them and prevent submission
+            const forms = document.querySelectorAll(".needs-validation");
             Array.from(forms).forEach((form) => {
                 form.addEventListener(
                     "submit",
@@ -175,7 +161,6 @@
                             event.preventDefault();
                             event.stopPropagation();
                         }
-
                         form.classList.add("was-validated");
                     },
                     false
@@ -183,8 +168,6 @@
             });
         })();
 
-
-        // Image preview function
         document.getElementById('userPicture').addEventListener('change', function(event) {
             const file = event.target.files[0];
             const previewImage = document.getElementById('previewImage');
@@ -192,17 +175,16 @@
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
-                    previewImage.src = e.target.result; // Update the src with the file content
+                    previewImage.src = e.target.result;
                 }
-                reader.readAsDataURL(file); // Read the file as Data URL
+                reader.readAsDataURL(file);
             }
         });
+    </script>
 
-
-        // console.log(window.$);
-
+    <script type="module">
         $(document).ready(function() {
-            console.log('jQuery is working!');
+            console.log("ready!");
         });
     </script>
 @endpush

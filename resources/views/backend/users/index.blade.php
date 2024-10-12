@@ -128,6 +128,9 @@
         }
     </script>
 
-
-    <script type="module"></script>
+    <script type="module">
+        $(document).ready(function() {
+            console.log("ready!");
+        });
+    </script>
 @endpush

@@ -134,23 +134,17 @@
         </div>
     </div>
 @endsection
+
 @push('styles')
     <style>
-
     </style>
 @endpush
 
 @push('scripts')
-    <script type="module">
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    <script>
         (() => {
             "use strict";
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms =
-                document.querySelectorAll(".needs-validation");
-
-            // Loop over them and prevent submission
+            const forms = document.querySelectorAll(".needs-validation");
             Array.from(forms).forEach((form) => {
                 form.addEventListener(
                     "submit",
@@ -159,19 +153,17 @@
                             event.preventDefault();
                             event.stopPropagation();
                         }
-
                         form.classList.add("was-validated");
                     },
                     false
                 );
             });
         })();
+    </script>
 
-
-
-
+    <script type="module">
         $(document).ready(function() {
-
+            console.log("ready!");
         });
     </script>
 @endpush
