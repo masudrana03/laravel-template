@@ -8,6 +8,11 @@ Route::get('/', function () {
 });
 
 
+use App\Livewire\Counter;
+
+Route::get('/counter', Counter::class);
+
+
 
 Route::get('/dashboard', function () {
     return view('backend.dashboard.index');
