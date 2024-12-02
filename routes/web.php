@@ -9,8 +9,10 @@ Route::get('/', function () {
 
 
 use App\Livewire\Counter;
+use App\Livewire\Home;
 
 Route::get('/counter', Counter::class);
+Route::get('/home', Home::class);
 
 
 
