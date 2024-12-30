@@ -12,12 +12,16 @@
     },
     "dependencies": {
         "@fontsource/source-sans-3": "^5.1.0",
+        "@inertiajs/react": "^2.0.0",
         "@popperjs/core": "^2.11.8",
+        "@vitejs/plugin-react": "^4.3.4",
         "admin-lte": "^4.0.0-beta2",
         "apexcharts": "^3.54.0",
         "bootstrap": "^5.3.3",
         "bootstrap-icons": "^1.11.3",
         "jquery": "^3.7.1",
-        "overlayscrollbars": "^2.10.0"
+        "overlayscrollbars": "^2.10.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
     }
 }
